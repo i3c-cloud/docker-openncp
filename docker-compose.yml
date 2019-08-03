@@ -41,7 +41,7 @@ services:
          - mysql-props-filler
        command: bash -c  "sleep 55 && /usr/local/liferay-portal/tomcat/bin/catalina.sh run"
        ports:
-         - 127.0.0.1:8081:8081
+         - 8081:8081
        networks:
          openncp-net:
             ipv4_address: 10.5.0.8            
